@@ -1,0 +1,59 @@
+@font-face {
+    font-family: 'cute';
+    src: url(PlaypenSans-Regular.ttf);
+}
+
+body{
+    background-image: url(https://img.freepik.com/vetores-gratis/fundo-aquarela-abstrato-pintado-a-mao_23-2149018547.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;    
+
+   
+}
+section{
+    display: flex;
+    width: 90vw; 
+    height: 80vh; 
+}
+
+h1 {
+        font-family: 'cute';
+        font-size: 40px;
+        color: darkorchid; 
+        text-align: center;
+}
+     
+h1:hover{
+        color: blueviolet;
+}
+     
+
+.galeria {
+        display: flex;
+        overflow: hidden; 
+        animation: slide 10s infinite alternate;
+        margin: 0 auto; 
+        border: 2px solid #8A2BE2;
+        border-radius: 10px;
+        box-shadow: inset 0 0 10px rgba(128, 0, 128, 0.7);
+        padding: 10px; 
+}
+
+    
+
+section img{
+    width: 0;
+    flex-grow: 1;
+    object-fit: cover;
+    opacity: .9;
+    transition: .3s ease;
+    border: 10px solid #8A2BE2; 
+    margin: 2px; 
+}
+
+section img:hover{
+cursor: crosshair;
+width: 200px;
+opacity: 1;
+filter: contrast(120%);
+}
